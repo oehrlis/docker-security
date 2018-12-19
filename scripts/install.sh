@@ -29,7 +29,7 @@ yum -y install htop docker-ce
 
 # Format spare device as Btrfs
 # Configure Btrfs storage driver
-docker-storage-config -s btrfs -d /dev/sdb
+#docker-storage-config -s btrfs -d /dev/sdb
 
 # Start and enable Docker engine
 systemctl start docker
