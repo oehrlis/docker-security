@@ -53,6 +53,7 @@ docker pull alpine
 docker pull centos:7
 docker pull ubuntu:17.10
 docker pull oraclelinux
+docker images
 ```
 
 ## Update Host
@@ -115,7 +116,7 @@ CMD exec "/opt/docker/bin/start_system_update.sh"
 Build the test container
 
 ``` bash
-cd $HOME/demo/update_host
+cd /vagrant/demo/update_host
 docker build -t alpine:demo00 .
 ```
 
@@ -166,7 +167,7 @@ docker container run --rm -d \
 
 Check what's going on
 ``` bash
-docker logs -f vasili
+docker logs vasili
 docker ps
 docker container top vasili
 ```
@@ -222,7 +223,7 @@ CMD ["-c", "2", "--timeout", "15"]
 Build the image...
 
 ```bash
-cd $HOME/demo/cgroups
+cd /vagrant/demo/cgroups
 docker image build -t stress_demo .
 ```
 
