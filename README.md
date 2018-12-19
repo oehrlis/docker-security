@@ -266,7 +266,7 @@ Create a file / folder
 
 ```bash
 mkdir -p $HOME/demo/passwords
-cd $HOME/demo/passwords
+cd /vagrant/demo/passwords
 
 echo "Hallo World, demo 2018" >demo.txt
 ```
