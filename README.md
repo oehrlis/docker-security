@@ -41,6 +41,7 @@ git clone https://github.com/oehrlis/docker-security
 **Step 2:** Provisions a vagrant environment
 
 ```bash
+cd docker-security
 vagrant up
 vagrant ssh
 ```

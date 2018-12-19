@@ -14,6 +14,7 @@
 .idea/
 /.pydevproject
 /.Project
+/.vagrant
 *.code-workspace
 
 # - EOF -----------------------------------------------------------------
