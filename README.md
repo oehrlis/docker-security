@@ -1,6 +1,6 @@
 ---
 title: "Demo Docker Security"
-subtitle: "Demos of the lecture Docker Security"
+subtitle: "Demos for the Docker Security lecture"
 author: [Stefan Oehrli]
 date: "20 Dezember 2018"
 tvddocversion: 1.0
