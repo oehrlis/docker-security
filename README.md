@@ -9,7 +9,7 @@ listings-disable-line-numbers: true
 titlepage: true
 toc: true
 toc-own-page: true
-toc-title: "Inhalt"
+toc-title: "Content"
 toc-depth: 2
 linkcolor: blue
 ---
