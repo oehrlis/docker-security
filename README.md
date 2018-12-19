@@ -18,47 +18,34 @@ linkcolor: blue
 
 ## Requirements and Environment
 
-All demos are done on Docker Community Edition 18.03.1 on Oracle Linux 7.5 running on a virtualbox VM created based on Vagrant. The examples are supposed to run on all Docker environments on Linux. Below we just provide the steps to setup the demo environment based on an Oracle Vagrantbox for Docker. (see [oracle/vagrant-boxes](https://github.com/oracle/vagrant-boxes) on GitHub)
+All demos are done on Docker Community Edition 18.03.1 on Oracle Linux 7.5 running on a virtualbox VM created based on Vagrant. The examples are supposed to run on all Docker environments on Linux. Below we just provide the steps to setup the demo environment based on an Oracle Vagrant box for Docker. (see [oracle/vagrant-boxes](https://github.com/oracle/vagrant-boxes) on GitHub).
 
 ### Prerequisites
 
 1. Install [Oracle VM VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 2. Install [Vagrant](https://vagrantup.com/)
-3. Clone the Oracle vagrant box respoistory `git clone https://github.com/oracle/vagrant-boxes`
-4. Provisions a vagrant environment for based on [DockerEngine]().
+3. Clone the docker setup demo respoistory `git clone https://github.com/oehrlis/docker-security`
+4. Provisions a vagrant environment.
 5. Configure the VM for the demos.
-6. Get the Docker Security demos [https://www.oradba.ch/](https://www.oradba.ch/)
 
-Step 1-4 can be skipped, if the demo's are done on an other system or VM.
+Alternatively you can use the scripts from the repository on you own Docker environment.
 
 ## Setup demo environment
 
-**Step 3:** Clone the Oracle vagrantbox respoistory
+**Step 1:** Clone the Oracle vagrantbox respoistory
 
 ```bash
-git clone https://github.com/oracle/vagrant-boxes
+git clone https://github.com/oehrlis/docker-security
 ```
 
-**Step 4:** Provisions a vagrant environment
+**Step 2:** Provisions a vagrant environment
 
 ```bash
-cd DockerEngine
 vagrant up
 vagrant ssh
 ```
 
-**Step 5:** Configure the VM for the demos and install **htop**.
-
-```bash
-sudo yum -y install yum-utils device-mapper-persistent-data lvm2 psmisc
-wget dl.fedoraproject.org/pub/epel/7/x86_64/Packages/e/epel-release-7-11.noarch.rpm
-sudo rpm -ihv epel-release-7-11.noarch.rpm
-sudo yum-config-manager \
-    --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-sudo yum -y install htop docker-ce
-```
-
-Predownload a couple of images
+**Step 3:** Predownload a couple of images
 
 ```bash
 docker pull alpine

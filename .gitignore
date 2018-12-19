@@ -1,0 +1,19 @@
+# Software, Packages and other stuff not for git
+**/*.rpm
+**/*.jar
+**/*.zip
+**/*.tar.gz
+**/*.tgz
+**/*.gz
+**/*.netrc
+
+# MacOS fork files
+**/*.DS_Store
+
+# Project files
+.idea/
+/.pydevproject
+/.Project
+*.code-workspace
+
+# - EOF -----------------------------------------------------------------
